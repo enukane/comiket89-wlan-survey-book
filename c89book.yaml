@@ -1,19 +1,22 @@
-bookname: template
-booktitle: "ReVIEW Dojinshi template"
-subtitle: "base template for making my book"
+bookname: c89book
+booktitle: "Capturing 802.11"
+subtitle: "ひたすら集めるお話 2015"
 language: ja
-aut: "@n_kane"
+aut: '@n_kane'
 prt: Glenda9
 prt_url: http://github.com/enukane/
-date: 201X-XX-XX
+date: 2015-12-31
 rights: (C) enukane
-description: Season 20XX, CXX book
+description: Winter 2015, C89 book
 
 # Title page is separated from this generation (coverpage.pdf)
-titlepage: false
+titlepage: true
+coverfile: titlepage.tex
+#cover: _cover.html
+backcover: backcover.tex
 # 奥付生成
 colophon: true
-pubhistory: 20XX年 XX月 XX日 第一版発行
+pubhistory: 2015年 12月 31日 第一版発行
 
 toc: true
 toclevel: 3
@@ -23,5 +26,6 @@ texstyle: template
 texdocumentclass: ["jsbook", "a4j,openany"]
 mytoc: true
 
+#dvioptions: -p b5 -x 40 -y 58
 
 params: --stylesheet=template.css --footnotetext --chapterlink --subdirmode
